@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Sign in</title>
+    <title>Register</title>
 </head>
 
 <body>
@@ -15,28 +15,28 @@
         <a href="index.html"><img src="assets/sign-in_image.jpg" alt="Logo" width=9%></a>
     </div>
 
-    <!-- signin box -->
+    <!-- register form -->
     <div class="box">
-        <p style="font-size: x-large;">Sign-In</p><br>
-        <h5>Email or mobile phone number</h5>
+        <p style="font-size: x-large;">Create account</p><br>
+        <h5>Your name</h5>
+        <input type="text" name="text" id="text"><br><br>
+        <h5>Email</h5>
         <input type="email" name="email" id="email"><br><br>
+        <h5>Mobile</h5>
+        <input type="tel" name="phone" id="phone"><br><br>
         <h5>Password</h5>
-        <input type="password" name="pass" id="pass"><br>
+        <input type="password" name="pass" id="pass" placeholder="At least 6 characters"><br><br>
+        <h5>Re-enter password</h5>
+        <input type="re_password" name="re_pass" id="re_pass"><br>
         <button type="submit">Continue</button><br><br>
         <p style="font-size: small;">By continuing, you agree to Amazon's <a href="#">Conditions of Use</a> and <a
                 href="#">Privacy Notice</a>.</p><br><br>
-        <p style="font-size: small;"><a href="#">› Need help?</a></p>
-        <p style="font-size: small;"><a href="#">Forgot your password?</a></p>
-        <p style="font-size: small;"><a href="#">Other issues with Sign-In</a></p>
-    </div>
-    <div class="box2">
-        <p>New to Amazon?</p>
-        <button type="submit" onClick="location.href='register.html'">Create your Amazon account</button>
+        <p style="font-size: small;">Already have an account? <a href="signin.html">Sign-In</a></p>
     </div>
 
     <hr style="margin: 30px;">
 
-    <!-- Footer  -->
+    <!-- footer  -->
     <div class="signin_footer">
         <p> <a href="#">Conditions of Use</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Privacy
                 Notice</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Help </a> <br><br>

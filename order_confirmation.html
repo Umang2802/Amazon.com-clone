@@ -1,12 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Order confirmation</title>
 </head>
+
 <body>
-    
+    <!-- Navbar -->
+    <nav>
+        <a href="https://www.amazon.com/"><img src="assets/amazon_logo.jpg" alt="Logo" width=50%></a>
+
+        <div class="nav-items">
+            <li><a href="#"><i class='fas fa-map-marker-alt'></i>&nbsp;Deliver to
+                    </br>&nbsp;&nbsp;&nbsp;&nbsp;<strong>India</strong></a></li>
+            <li>
+                <form action="#">
+                    <input type="search" class="search-data" required>
+                    <button type="submit" class="fas fa-search"></button>
+                </form>
+            </li>
+            <li><a href="#">Lang</a></li>
+            <li><a href="signin.html">Hello, Sign In <br><strong>Account and Lists</strong></a></li>
+            <li><a href="#">Returns <br><strong>& Orders</strong></a></li>
+            <li><a href="cart.html"><i class="fas fa-shopping-cart"
+                        style="font-size: x-large;"></i>&nbsp;<strong>Cart</strong></a></li>
+        </div>
+    </nav>
+
+    <!-- Second Navbar -->
+    <div class="home-nav2">
+        <li><i class="fas fa-bars"></i> All</li>
+        <li>Today's Deals</li>
+        <li>Buy Again</li>
+        <li>Customer Service</li>
+        <li>Browsering History</li>
+        <li>Gift Card</li>
+        <li>Registry</li>
+        <li>Sell</li>
+        <li><a href="catalog.html">Catalog</a></li>
+    </div>
+
+    <!-- order_confirmation -->
+    <div class="confirmation">
+        <div class="Column1">
+            <h2><i class="fas fa-check-circle"></i> Order placed, thank you!</h2><br>
+            Confirmation will be sent to your email. <br><br>
+            <strong>Monday, 1 Nov</strong><br>
+            Delivery date <br><br>
+            <hr>
+            <div class="item">
+                <div class="item-img">
+                    <img src="assets/tshirt.jpg" alt="">
+                </div>
+                <div class="item-desc">
+                    <h3>XYZ International Men's Regular Fit T-Shirt <br>(Pack of 3)</h3><br>
+                    <p style="text-decoration: line-through;">₹2,397.00</p>
+                    <p style="color: red;">&nbsp;&nbsp;<strong>₹499.00</strong></p><br>
+                    <p>You save: ₹1,898.00 (79%) <br><strong>Colour:</strong> Multicolor <br><strong>Size:</strong> L
+                        &nbsp;&nbsp;&nbsp;&nbsp;<strong>Qty:</strong> 1 <br><strong>Sold by </strong> Online.Retail </p>
+                    <br>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="Column2">
+            <h3>Shipping to</h3><br>
+            User full name,<br> Xyz landmark, city,<br> district, state,<br> pincode <br> phone: 8638966498
+            <br><br><br><br>
+            <strong>Payment Method</strong> <br><br>
+            Credit card <br> <br><br><br><br><br><br>
+            <input type="button" value="Continue" onclick="location.href='index.html'">
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="footer-parts">
+            <div>
+                <h4>Get to Know Us</h4>
+                <a href="#">Careers</a><br>
+                <a href="#">Blog</a><br>
+                <a href="#">About Amazon</a><br>
+                <a href="#">Investor Relations</a><br>
+                <a href="#">Amazon Devices</a><br>
+            </div>
+            <div>
+                <h4>Make Money with Us</h4>
+                <a href="#">Sell products on Amazon</a><br>
+                <a href="#">Sell on Amazon Business</a><br>
+                <a href="#">Sell apps on Amazon</a><br>
+                <a href="#">Become an Affiliate</a><br>
+                <a href="#">Advertise Your Products</a><br>
+                <a href="#">Self-Publish with Us</a><br>
+                <a href="#">Host an Amazon Hub</a><br>
+                <a href="#">› See More Make Money with Us</a><br>
+            </div>
+            <div>
+                <h4>Amazon Payment Products</h4>
+                <a href="#"> Amazon Business Card</a><br>
+                <a href="#">Shop with Points</a><br>
+                <a href="#">Reload Your Balance</a><br>
+                <a href="#">Amazon Currency Converter</a><br>
+            </div>
+            <div>
+                <h4>Let Us Help You</h4>
+                <a href="#">Amazon and COVID-19</a><br>
+                <a href="#">Your Account</a><br>
+                <a href="#">Shipping Rates & Policies</a><br>
+                <a href="#">Returns & Replacements</a><br>
+                <a href="#">Manage Your Content and Devices</a><br>
+                <a href="#">Amazon Assistant</a><br>
+                <a href="#">Help</a><br>
+            </div>
+        </div>
+        <hr style="margin: 20px 0;">
+
+        <!-- Footer 2 -->
+        <div class="signin_footer">
+            <p style="color: white; padding: 10px 0;"> <a style="color: white;" href="#">Conditions of
+                    Use</a>&nbsp;&nbsp;&nbsp;&nbsp;<a style="color: white;" href="#">Privacy
+                    Notice</a>&nbsp;&nbsp;&nbsp;&nbsp;<a style="color: white;" href="#">Internet-Based Ads
+                </a>&nbsp;&nbsp;&nbsp;&nbsp;
+                © 1996-2021, Amazon.com, Inc. or its affiliates</p>
+        </div>
+    </div>
 </body>
+
 </html>

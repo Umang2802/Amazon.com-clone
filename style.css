@@ -8,7 +8,7 @@
 }
 
 /* Home page style */
-nav{
+nav {
   background: #000000;
   display: flex;
   flex-wrap: wrap;
@@ -18,46 +18,45 @@ nav{
   padding: 0 26px;
 }
 
-nav .nav-items{
+nav .nav-items {
   display: flex;
   flex: 1;
   align-items: center;
 }
 
-nav .nav-items li{
+nav .nav-items li {
   list-style: none;
   padding: 0 12px;
 }
 
-nav .nav-items li a{
+nav .nav-items li a {
   color: #fff;
   font-size: 14px;
   font-weight: 500;
   text-decoration: none;
 }
 
-nav form{
+nav form {
   display: flex;
   height: 40px;
   width: 740px;
   background: #ffffff;
-  min-width: 18%!important; 
+  min-width: 18% !important;
   border: none;
   border-radius: 5px;
 }
 
-nav form .search-data{
+nav form .search-data {
   width: 100%;
   height: 100%;
   padding: 0 10px;
-  color: #fff;
   font-size: 17px;
   border: none;
   font-weight: 500;
   background: none;
 }
 
-nav form button{
+nav form button {
   padding: 0 15px;
   color: rgb(0, 0, 0);
   font-size: 17px;
@@ -66,7 +65,7 @@ nav form button{
   border-top-right-radius: 5px;
   border: none;
   cursor: pointer;
-  transition: .2s all;
+  transition: 0.2s all;
 }
 
 .home-nav2 {
@@ -84,6 +83,10 @@ nav form button{
   padding: 0 8px;
 }
 
+.home-nav2 a {
+  text-decoration: none;
+  color: #fff;
+}
 
 .cols {
   margin: 23px;
@@ -110,7 +113,7 @@ nav form button{
   margin-top: 5px;
 }
 
-.sub-cards a{
+.sub-cards a {
   float: left;
   width: 48%;
   margin: 1px;
@@ -123,7 +126,6 @@ nav form button{
 .footer {
   background-color: #1e232b;
   padding: 10px 0;
-
 }
 
 .footer-parts {
@@ -143,7 +145,6 @@ nav form button{
   color: #ffffff;
   width: 17%;
   padding: 0 10px;
-  
 }
 
 .footer-parts a {
@@ -152,7 +153,6 @@ nav form button{
   line-height: 1.8;
   font-size: small;
 }
-
 
 /* Sign in style */
 .box {
@@ -163,12 +163,13 @@ nav form button{
   border-radius: 3px;
 }
 
-.box input[type="email"] {
+.box input {
   margin-top: 2px;
   width: 96%;
-  padding: 8px;
+  padding: 7px;
   border-radius: 3px;
   border-width: 0.8px;
+  border: 0.1px solid rgb(194, 194, 194);
 }
 
 .box button {
@@ -222,16 +223,14 @@ nav form button{
 .signin_footer {
   font-size: small;
   text-align: center;
+  margin-bottom: 30px;
 }
 
 .signin_footer a {
   text-decoration: none;
 }
 
-
-
 /* Cart style */
-
 .cart-section {
   display: flex;
   width: 100%;
@@ -239,10 +238,9 @@ nav form button{
 }
 
 .cart-section1 {
-  width: 74%; 
+  width: 74%;
   height: 410px;
-  margin:20px;
-  
+  margin: 20px;
 }
 
 .cart-section1 div {
@@ -275,9 +273,9 @@ nav form button{
 }
 
 .cart-section2 {
-  width: 20%; 
+  width: 20%;
   height: 800px;
-  margin: 20px; 
+  margin: 20px;
 }
 
 .cart-section2 div {
@@ -296,6 +294,12 @@ nav form button{
   width: 96%;
   border-radius: 4px;
   border-width: 0;
+  cursor: pointer;
+}
+
+.cart-section2 button:hover {
+  transform: scale(1.01);
+  background-color: rgb(228, 228, 3);
 }
 
 .item {
@@ -324,10 +328,229 @@ nav form button{
 }
 
 .item-desc p {
-  font-size: small; 
+  font-size: small;
   float: left;
 }
 
 .item-desc select {
   padding: 3px;
 }
+
+/* Payment style */
+.credit_card {
+  background-color: rgb(255, 255, 255);
+  margin: auto;
+  margin-top: 260px;
+  height: 250px;
+  width: 45%;
+  border-radius: 7px;
+  box-shadow: 2px 2px 20px 7px #414141;
+  border-width: 0;
+}
+
+.credit_card_top {
+  background-color: #c7c5c5;
+  height: 19%;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  padding: 15px;
+}
+
+.credit_card_top button {
+  float: right;
+  margin-right: 5px;
+  font-size: large;
+  border-width: 0;
+  padding: 0 10px;
+  background-color: #c7c5c5;
+  cursor: pointer;
+}
+
+.credit_card_top i:hover {
+  transform: scale(1.2);
+}
+
+.credit_card_middle {
+  height: 62%;
+  display: flex;
+}
+
+.credit_card_middle .part_1 {
+  width: 50%;
+  padding: 15px;
+}
+
+.credit_card_middle .part_1 input {
+  float: right;
+  margin-top: 2px;
+  width: 60%;
+  padding: 5px;
+  border-radius: 3px;
+  border-width: 0.8px;
+  border: 0.1px solid rgb(194, 194, 194);
+}
+
+.credit_card_middle .part_2 {
+  width: 50%;
+  padding: 15px;
+  font-size: small;
+}
+
+.credit_card_bottom {
+  background-color: #c7c5c5;
+  height: 19%;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  padding: 15px;
+}
+
+.credit_card_bottom div {
+  width: 20%;
+  margin: auto;
+}
+
+.credit_card_bottom input {
+  padding: 4px;
+  background-color: yellow;
+  border-width: 0;
+  border-radius: 7px;
+  cursor: pointer;
+  width: 60%;
+}
+
+.credit_card_bottom input:hover {
+  background-color: rgb(240, 225, 20);
+  transform: scale(1.1);
+}
+
+/* Order confirmation */
+.confirmation {
+  width: 95%;
+  margin: 40px;
+  height: 500px;
+  box-shadow: 2px 2px 2px 23px #e7e7e7;
+  border-radius: 5px;
+  display: flex;
+}
+
+.confirmation hr {
+  margin: 13px 0;
+}
+
+.confirmation .Column1 {
+  width: 50%;
+  padding: 30px;
+}
+
+.confirmation .Column2 {
+  width: 50%;
+  padding: 50px;
+  text-align: center;
+}
+
+.Column2 input {
+  display: flex;
+  float: right;
+  background-color: yellow;
+  padding: 10px;
+  border-radius: 5px;
+  border: 0.1px solid grey;
+  cursor: pointer;
+}
+
+.Column2 input:hover {
+  background-color: rgb(240, 225, 20);
+  transform: scale(1.1);
+}
+
+.Column1 h2 {
+  color: rgb(5, 151, 107);
+}
+
+.confirmation .item-img {
+  left: 0;
+}
+
+.confirmation .item-desc {
+  left: 220px;
+}
+
+/* User Profile */
+
+.profile {
+  margin:auto;
+  width:90%;
+  padding:30px;
+}
+
+.profile-details {
+  width: 55%;
+  margin: auto;
+  border: 0.1px solid grey;
+  padding: 35px;
+  border-radius: 5px;
+  line-height: 26px;
+  box-shadow: 2px 2px 10px 7px #e7e7e7;
+}
+
+.profile-details img {
+  float: right;
+}
+
+.profile-details p {
+  font-size: small;
+}
+
+.profile-details input {
+  float: right;
+  padding: 2px;
+  margin: 7px;
+  cursor: pointer;
+  border-radius: 4px;
+  border: 0.1px solid grey;
+}
+
+.recent-orders{
+  margin: 50px 0;
+  width:100%;
+  height: 300px;
+  box-shadow: 2px 2px 10px 7px #e7e7e7;
+  border-radius: 5px;
+  border: 0.1px solid grey;
+  padding: 40px;
+  line-height: 26px;
+  display: flex;
+}
+
+.recent-orders div {
+  width: 23%;
+  padding: 20px;
+  text-align: center;
+  
+}
+
+.recent-orders p {
+  font-size: small;
+}
+
+.recent-orders a {
+  text-decoration: none;
+  font-size: small;
+  width: 80px;
+}
+
+.wishlist {
+  height: 400px;
+}
+
+.wishlist h2 {
+  width: 200px;
+}
+
+.wishlist input {
+  padding: 3px;
+  margin-bottom: 6px;
+  cursor: pointer;
+}
+
+/* Catalog */
